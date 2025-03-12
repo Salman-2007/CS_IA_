@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Title Field -->
+        <EditText
+            android:id="@+id/etTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Challenge Title"
+            android:inputType="textCapWords"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Description Field -->
+        <EditText
+            android:id="@+id/etDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Challenge Description"
+            android:inputType="textMultiLine"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Goal Distance Field -->
+        <EditText
+            android:id="@+id/etGoalDistance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Goal Distance (km)"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Pledge Amount Field -->
+        <EditText
+            android:id="@+id/etPledgeAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Pledge Amount (per km)"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Start Date Field (clickable to open a DatePicker) -->
+        <TextView
+            android:id="@+id/tvStartDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start Date: Select Date"
+            android:padding="8dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- End Date Field (clickable to open a DatePicker) -->
+        <TextView
+            android:id="@+id/tvEndDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="End Date: Select Date"
+            android:padding="8dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Save Challenge Button -->
+        <Button
+            android:id="@+id/btnSaveChallenge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Challenge"
+            android:backgroundTint="@android:color/holo_blue_light"
+            android:textColor="@android:color/white"/>
+
+    </LinearLayout>
+</ScrollView>
